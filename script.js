@@ -531,7 +531,7 @@ localStorage.setItem('freespacefair', dataJSON);
                 // const poly = L.polygon(latLngPoints);
                 // const latLngPoints1 = poly.getLatLngs().map(latlng => [latlng.lng, latlng.lat]);
                 // const latLngPoints2 = poly.getLatLngs().map(latlng => [latlng.lng, latlng.lat]);
-            if(turf.booleanOverlap(polyturf, polygonturf))
+            if(turf.booleanIntersects(polyturf, polygonturf))
             {
                flag=false;
                break;
