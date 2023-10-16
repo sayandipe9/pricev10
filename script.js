@@ -665,6 +665,9 @@ localStorage.setItem('freespacefair', dataJSON);
 
 
     control.on("routesfound", function (e) {
+         polygonPrice = [];
+        polygonSum = [];
+        summaryresult = []
         const route = e.routes[0];
         console.log(route);
         console.log("route");
