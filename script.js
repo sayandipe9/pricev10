@@ -667,7 +667,11 @@ localStorage.setItem('freespacefair', dataJSON);
     control.on("routesfound", function (e) {
          polygonPrice = [];
         polygonSum = [];
-        summaryresult = []
+        summaryresult = [];
+          removeall.forEach(req => { map.removeLayer(req) });
+        console.log(removeall);
+        console.log("remove all/..")
+        removeall = [];
         const route = e.routes[0];
         console.log(route);
         console.log("route");
